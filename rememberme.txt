@@ -1,0 +1,62 @@
+--REMEMBER--
+20130116
+
+Key FIX fields
+
+35  Msg Type	(8=Execution Report)
+54	Side	(1=Buy, 2=Sell)
+32	LastShares	(Qty)
+150	Exec Type (1, 2, F) [fill or partial]
+31 	LastPrice
+55	Symbol
+48	Sec ID (ISIN)
+11 	ClOrID
+60 	Transact Time
+52	Sending	Time
+
+Powershell:
+grep-a-like)
+select-string "REGEX" /file
+
+Foreach ($x in 1, 2, 3) { print $x }     
+1
+2
+3
+
+%{ print $_ ; ...stuff... } is shorthand for foreach-object ($_ holds the value for the current object), use with pipe:
+
+e.g cat dirlist.txt | %{ mkdir $_ }
+
+
+"string" -replace "regex","value" ; can use grouping:
+
+"the bat in the hat" -replace "(.*)bat(.*)",'$1cat$2'   !!note use of single quotes to ensure $1 $2 are not evaluated before being passed to replace function.
+
+
+Perl
+
+# my --declare lexically scoped variable
+my $foo = "hello, world!"; #create scalar 
+my @bar = ("Hello", "world", "!"); #create array 
+print $bar[1]; -- "world" #access array
+my %baz = ( greeting => "Hello, world!", farewell=>"Goodbye, cruel world!" ); #create hash table
+print $baz(farewell} --farewell; #access hash table
+
+# object->method();
+
+#function param1 param2;
+
+
+Perl CGI
+
+#!/usr/bin/perl (-w [with warnings])
+
+use CGI; 
+# --or--
+#use CGI qw(:standard); # for a more function flavour. e.g. call header not $query->header
+
+$query = CGI->new();
+
+CGI shortcuts can produce basic html
+
+print $query->header, $query->start_html("Hello"), $query->h1("Hello World"), $query->p("Hello everybody."), $query->end_html;
