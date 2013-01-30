@@ -60,3 +60,44 @@ $query = CGI->new();
 CGI shortcuts can produce basic html
 
 print $query->header, $query->start_html("Hello"), $query->h1("Hello World"), $query->p("Hello everybody."), $query->end_html;
+
+====uwsgi=====
+
+uwsgi, what is the difference between --module and --wsgi-file?
+
+if --python-path is set to /var/www/foo.com/ with a file /var/www/foo.com/foo/wsgi.py
+
+--module specifies a python module to load using dotted syntax without the .py suffix
+		eg foo.wsgi
+	must be importable.
+	
+--wsgi file specifies the wsgi python file itself using a normal uri
+		eg foo/wsgi.py
+		
+====virtualenv====
+
+How would you create a virtual python env called foo-bar, and how would you activate it?
+
+virtualenv foo-bar
+virtualenv /path/to/foo-bar
+
+====virtualenv====
+
+How would enable the foo-bar python environment? How would you disable it.
+
+. foo-bar/bin/enable
+. path/to/foo-bar/bin/enable
+
+disable
+
+====virtualenv====
+
+When creating an environment, what argument prevents inclusion of any python packages installed in the 'main/site' python directory?
+
+--no-site-packages
+
+====pip====
+
+How would you install a python module to a specific environment (foo-bar)?
+
+pip -E /path/to/foo-bar uwsgi install
