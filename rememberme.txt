@@ -100,4 +100,4 @@ When creating an environment, what argument prevents inclusion of any python pac
 
 How would you install a python module to a specific environment (foo-bar)?
 
-pip -E /path/to/foo-bar uwsgi install
+pip -E /path/to/foo-bar install uwsgi
