@@ -101,3 +101,12 @@ When creating an environment, what argument prevents inclusion of any python pac
 How would you install a python module to a specific environment (foo-bar)?
 
 pip -E /path/to/foo-bar install uwsgi
+
+
+====python====
+
+What Class method allows an instance of that class to be called like a function?
+
+def _call__(self):
+    ...
+
