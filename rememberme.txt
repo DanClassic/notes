@@ -110,3 +110,116 @@ What Class method allows an instance of that class to be called like a function?
 def _call__(self):
     ...
 
+===C#======
+
+Create a namespace Foo, the innards of which uses System:
+
+namespace Foo
+{
+	using System;
+	...
+	...
+	...
+}
+
+------------------------
+
+What method should all c# programs define and what are it's properties?
+
+Main(), capital 'M'
+
+public static void Main()
+{
+	...
+} 
+
+public static int Main(string[] args)
+{
+	...
+	return 0;
+}
+
+----------------------
+
+Write basic Hello, World:
+
+using Systen;
+
+namespace HelloWorld
+{
+	class Hola
+	{
+		public static void Main()
+		{
+			Console.WriteLine("Hello, World!");
+			
+			Console.WriteLine("Press any key to exit.");
+			Console.ReadKey();
+		}
+	}
+}
+
+-------------------
+
+Write a line to the console, replacing placeholder strings:
+
+int year = 1066;
+string battle = "Battle of Hastings";
+System.Console.WriteLine("The {0} took place in {1}.", battle, year);
+
+-------------------
+
+To override a method, the overridden base method must be one of the following three types:
+
+
+The overridden base method must be virtual, abstract, or override.
+
+
+-------------------
+
+Create an enumerable that outbuts 5-10:
+
+IEnumerable<int> r = Enumerable.Range(5, 6);
+
+-------------------
+
+Illustrate the use of the Select method to map the output of an IEnumerable, eg double each value in range 1-10:
+
+Enumerable.Range(1, 10).Select(x => x * 2)
+
+-------------------
+
+Illustrate the use of the Where method to filter the output of an IEnumerable, eg select the even numbers in range 1-10:
+
+Enumerable.Range(1, 10).Where(x => x % 2 == 0 ? true : false)
+
+
+-------------------
+
+Illustrate the use of the Aggregate method to reduce/fold an IEnumerable, eg find the product of the range 1-10:
+
+Aggregate.(initial, (agg, val) => agg * val)
+Enumerable.Range(1, 10).Aggregate(1, (x, y) => x * y)
+
+-----------------
+
+foreach, for, while, do-while
+
+-----------------
+
+arrays, multidimensional, jagged, collections
+
+----------------- 
+
+try, catch, finially
+
+foreach (var i in blaf)
+{
+
+}
+
+for (int i = 0; i < 10; i++)
+{
+	
+}
+
