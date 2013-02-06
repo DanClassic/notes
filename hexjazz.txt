@@ -35,3 +35,32 @@ List<int> GetSurrounding(int index, int width, int height)
 	}
 	return surroundingIndexes;
 }
+
+
+
+/*Turn based, hex-tiled.
+Each player has two agents. For one player the agents are 'spies' and for the other 'mercs'.
+Each player takes it in turn, to accomplish their objective.
+Spies: Capture Terminal, Mercs: Protect Terminal
+
+Each player's turn concists of a number of moves. Each move costs AP (Action Points) from the agent being moved, the AP of each agent is repleneshed at the beginning of each round. At the end of a turn the player chooses and End Move for their agents, usually putting them in a guard state for the duration of their opponents turn.
+
+Example moves:
+Running (1 AP per hex)
+Sneaking (2 AP per hex)
+Plant sensor (? AP)
+Plant mine (? AP)
+Scan for enemies/devices (? AP)
+Shoot (? AP)
+Hack Terminal (Terminals have a total amount of AP required to hack, say 50 AP, which can be deducted using successive turns, perhaps with a maximum allowed each turn)
+
+After using their AP an agent goes into it's End Move. This is the state it will stay in until the beginnig of the next move.
+
+End Move:
+Guard modes, the agent keeps guard in a certain direction over an area of the level. Should any of the other players agent pass through or stop in an area being guarded they will be fired upon. (Merc shooting spy = loss of HP. Spy shooting Merc = loss of AP in next round) Guard mode can be either long, medium or short range. If it is in long/medium his back will be exposed.
+
+When a player is attacked by an opponent in their guard state, that players agent is affected. Effects could include that move is interrupted, loss of AP, loss of HP.
+
+There are some areas that only spies/mercs can walk accross. Spies have more AP per round, and more routes available to them.
+
+*/
