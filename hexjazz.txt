@@ -1,0 +1,37 @@
+List<int> GetSurrounding(int index, int width, int height)
+{
+  List<int> surroundingIndexes = new List<int>();
+	if (index % width != 0)
+	{
+		surroundingIndexes.Add(index - 1);
+	}
+	if (index % width != (width -1))
+	{
+		surroundingIndexes.Add(index + 1);
+	}
+	if (index / width != 0)
+	{
+		int oddeven = (index / width) % 2 == 0 ? -1 : 1;
+		int i1 = index - width;
+		int i2 = index - width + oddeven;
+		if (i1 / width == (index / width - 1)) {
+			surroundingIndexes.Add(i1);
+		}
+		if (i2 / width == (index / width - 1)) {
+			surroundingIndexes.Add(i2);
+		}
+	}
+	if (index / width != height - 1)
+	{
+		int oddeven = (index / width) % 2 == 0 ? -1 : 1;
+		int i1 = index + width;
+		int i2 = index + width + oddeven;
+		if (i1 / width == (index / width + 1)) {
+			surroundingIndexes.Add(i1);
+		}
+		if (i2 / width == (index / width + 1)) {
+			surroundingIndexes.Add(i2);
+		}
+	}
+	return surroundingIndexes;
+}
