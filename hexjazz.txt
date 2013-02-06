@@ -58,8 +58,12 @@ After using their AP an agent goes into it's End Move. This is the state it will
 
 End Move:
 Guard modes, the agent keeps guard in a certain direction over an area of the level. Should any of the other players agent pass through or stop in an area being guarded they will be fired upon. (Merc shooting spy = loss of HP. Spy shooting Merc = loss of AP in next round) Guard mode can be either long, medium or short range. If it is in long/medium his back will be exposed.
-
+Guard modes for merc:
+Sniper: Monitors a distant area of the map (say, 3/7 hex within Line of Sight). They do not see their immediate surroundings and their back is vulnerable.
+Should an opponent stop in this area they will be shot. Should they pass through without stopping the merc side will be alerted to this at the start of the next round.
 When a player is attacked by an opponent in their guard state, that players agent is affected. Effects could include that move is interrupted, loss of AP, loss of HP.
+Rifle: The area in a direction in front of them is monitored. Back still vulnerable, spy is shot upon entering FOV. Back vulnerable.
+Melee: Merc is on guard for close quarters. Any spy in the immediatly surrounding square, even behind, will be hit and stunned.
 
 There are some areas that only spies/mercs can walk accross. Spies have more AP per round, and more routes available to them.
 
