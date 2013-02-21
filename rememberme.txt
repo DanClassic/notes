@@ -223,3 +223,6 @@ for (int i = 0; i < 10; i++)
 	
 }
 
+=============
+
+Steve Joker, is a low level enforcer for a bit part syndicate. John thief, is a rookie cop on his first day of the job. Now they must work together to stop an ancient evil from arising in the upper-east side. They are... The Joker and The Thief
