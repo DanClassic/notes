@@ -226,3 +226,8 @@ for (int i = 0; i < 10; i++)
 =============
 
 Steve Joker, is a low level enforcer for a bit part syndicate. John thief, is a rookie cop on his first day of the job. Now they must work together to stop an ancient evil from arising in the upper-east side. They are... The Joker and The Thief
+
+
+  The Last Teabag
+  For a ship containing the vestages of mankind, where everything was The Last Something, a disproportionate amount of reverance had been placed on the teabag. The other day Calvin knocked over The Last Creme de Menthe and nobody gave a shit. But the mere suggestion that something could happen to The Last Teabag, or worse, that someone might actually USE it was enough throw throw a crew member to fits of appoplexy. Any conversation in it's presence invariably became a heated discussussion of the type of tea it contained. 
+  "'When in doubt, Ginsing.' is not a 'old' saying, nor is it a valid counter-argument for Peppermint."
